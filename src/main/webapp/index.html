@@ -12,6 +12,8 @@
         <!-- bower:css -->
         <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css" />
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
+        <link rel="stylesheet" href="bower_components/leaflet-search/dist/leaflet-search.src.css" />
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css assets/styles/main.css -->
@@ -65,6 +67,12 @@
         <script src="bower_components/json3/lib/json3.js"></script>
         <script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
         <script src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
+        <script src="bower_components/angular-simple-logger/dist/angular-simple-logger.js"></script>
+        <script src="bower_components/lodash/lodash.js"></script>
+        <script src="bower_components/angular-google-maps/dist/angular-google-maps.js"></script>
+        <script src="bower_components/leaflet/dist/leaflet-src.js"></script>
+        <script src="bower_components/ui-leaflet/dist/ui-leaflet.js"></script>
+        <script src="bower_components/leaflet-search/dist/leaflet-search.src.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -192,6 +200,10 @@
     <script src="scripts/app/entities/favorite/favorite-detail.controller.js"></script>
     <script src="scripts/components/entities/favorite/favorite.service.js"></script>
     <script src="scripts/components/entities/favorite/favorite.search.service.js"></script>
+    <script src="scripts/app/google-maps/google-maps.controller.js"></script>
+    <script src="scripts/app/google-maps/google-maps.js"></script>
+    <script src="scripts/app/leaflet-maps/leaflet-maps.controller.js"></script>
+    <script src="scripts/app/leaflet-maps/leaflet-maps.js"></script>
     <!-- endbuild -->
 </body>
 </html>

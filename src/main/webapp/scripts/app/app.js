@@ -2,6 +2,9 @@
 
 angular.module('testApp', ['LocalStorageModule', 'tmh.dynamicLocale', 'pascalprecht.translate', 
     'ngResource', 'ngCookies', 'ngAria', 'ngCacheBuster', 'ngFileUpload',
+    'uiGmapgoogle-maps',
+    'nemLogging',
+    'ui-leaflet',
     // jhipster-needle-angularjs-add-module JHipster will add new module here
     'ui.bootstrap', 'ui.router',  'infinite-scroll', 'angular-loading-bar'])
 
@@ -121,6 +124,14 @@ angular.module('testApp', ['LocalStorageModule', 'tmh.dynamicLocale', 'pascalpre
         tmhDynamicLocaleProvider.useCookieStorage();
         tmhDynamicLocaleProvider.storageKey('NG_TRANSLATE_LANG_KEY');
         
+    })
+    // Google maps configuration
+    .config(function (uiGmapGoogleMapApiProvider) {
+        uiGmapGoogleMapApiProvider.configure({
+            key: 'AIzaSyCDQyIIYTdUa-WHYbVqXNvjEO_DJsHBbaQ',
+            v: '3.20',
+            libraries: 'weather,geometry,visualization,places'
+        });
     })
     // jhipster-needle-angularjs-add-config JHipster will add new application configuration here
     .config(['$urlMatcherFactoryProvider', function($urlMatcherFactory) {
